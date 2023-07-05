@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/queries.css">
+  <link rel="icon" href="assets/img/logo.ico">
+</head>
+
+<body class="body">
+  <div class="container">
+
+    <header class="header">
+      <img class="header__logo" src="assets/svg/logo.svg" alt="author's logo">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a class="nav__item nav__item_skills" href="#skills">skills</a></li>
+          <li><a class="nav__item nav__item_portfolio" href="#portfolio">portfolio</a></li>
+          <li><a class="nav__item nav__item_video" href="#video">video</a></li>
+          <li><a class="nav__item nav__item_price" href="#price">price</a></li>
+          <li><a class="nav__item nav__item_contacts" href="#contacts">contacts</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__lang-switch lang-switch">
+        <p>
+          <span class="lang-switch__option">en</span>
+          &nbsp;/&nbsp;
+          <span class="lang-switch__option">ru</span>
+        </p>
+      </div>
+
+      <div class="header__burger-menu">
+        <div class="header__burger-stick"></div>
+        <div class="header__burger-stick"></div>
+        <div class="header__burger-stick"></div>
+      </div>
+
+      <button class="header__theme-btn" data-theme="dark">
+        <img class="header__theme-icon" src="assets/svg/dark.svg" alt="theme button icon">
+      </button>
+    </header>
+
+    <main class="main">
+      <section class="section hero">
+        <div class="hero__wrapper">
+          <h1 class="hero__title">Alexa Rise</h1>
+          <p class="hero__motto">
+            Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise
+          </p>
+          <button class="hero__button btn effects">
+            <a class="hero__button-link" href="#contacts">Hire me</a>
+          </button>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="section__title-wrapper">
+          <h2 class="section__title skills__title">Skills</h2>
+        </div>
+        <div class="skills__container">
+          <div class="skills__item">
+            <p class="skills__name skills__name_1">Digital photography</p>
+            <p class="skills__description skills__description_1">
+              High-quality photos in the studio and on the nature
+            </p>
+          </div>
+
+          <div class="skills__item">
+            <p class="skills__name skills__name_2">Video shooting</p>
+            <p class="skills__description skills__description_2">
+              Capture your moments so that they always stay with you
+            </p>
+          </div>
+
+          <div class="skills__item">
+            <p class="skills__name skills__name_3">Retouch</p>
+            <p class="skills__description skills__description_3">
+              I strive to make photography surpass reality
+            </p>
+          </div>
+
+          <div class="skills__item">
+            <p class="skills__name skills__name_4">Audio</p>
+            <p class="skills__description skills__description_4">
+              Professional sounds recording for video, advertising, portfolio
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section portfolio" id="portfolio">
+        <div class="section__title-wrapper">
+          <h2 class="section__title portfolio__title">Portfolio</h2>
+        </div>
+        <div class="portfolio__buttons-wrapper">
+          <button class="btn effects portfolio__btn portfolio__btn_winter">Winter</button>
+          <button class="btn effects portfolio__btn portfolio__btn_spring">Spring</button>
+          <button class="btn effects portfolio__btn portfolio__btn_summer">Summer</button>
+          <button class="btn effects portfolio__btn portfolio__btn_autumn portfolio__btn_active">Autumn</button>
+        </div>
+        <div class="portfolio__images-wrapper">
+          <img class="portfolio__image" src="assets/img/autumn/1.jpg" alt="portfolio image: couple">
+          <img class="portfolio__image" src="assets/img/autumn/2.jpg" alt="portfolio image: horse">
+          <img class="portfolio__image" src="assets/img/autumn/3.jpg" alt="portfolio image: child">
+          <img class="portfolio__image" src="assets/img/autumn/4.jpg" alt="portfolio image: landscape">
+          <img class="portfolio__image" src="assets/img/autumn/5.jpg" alt="portfolio image: couple">
+          <img class="portfolio__image" src="assets/img/autumn/6.jpg" alt="portfolio image: action">
+        </div>
+      </section>
+
+      <section class="section video" id="video">
+        <div class="section__title-wrapper">
+          <h2 class="section__title video__title">Video</h2>
+        </div>
+        <div class="video__player">
+          <img class="video__img" src="assets/img/video.jpg" alt="wedding couple">
+          <button class="btn video__button">
+            <img class="video__icon" src="assets/svg/video-button.svg" alt="vido play button">
+          </button>
+        </div>
+      </section>
+
+      <section class="section price" id="price">
+        <div class="section__title-wrapper">
+          <h2 class="section__title price__title">Price</h2>
+        </div>
+        <div class="price__container">
+          <div class="price__item">
+            <h3 class="price__title price__title_standard">Standard</h3>
+            <p class="price__price price__price_standard">500 $</p>
+            <p>
+              <span class="price__option price__option_standard-1">One location</span>
+              <span class="price__option price__option_standard-2">120 photos in color</span>
+              <span class="price__option price__option_standard-3">12 photos in retouch</span>
+              <span class="price__option price__option_standard-4">Readiness 2-3 weeks</span>
+              <span class="price__option price__option_standard-5">Make up, visage</span>
+            </p>
+            <button class="btn price__button">Order shooting</button>
+          </div>
+          <div class="price__item">
+            <h3 class="price__title price__title_premium">Premium</h3>
+            <p class="price__price price__price_premium">700 $</p>
+            <p>
+              <span class="price__option price__option_premium-1">One or two locations</span>
+              <span class="price__option price__option_premium-2">200 photos in color</span>
+              <span class="price__option price__option_premium-3">20 photos in retouch</span>
+              <span class="price__option price__option_premium-4">Readiness 1-2 weeks</span>
+              <span class="price__option price__option_premium-5">Make up, visage</span>
+            </p>
+            <button class="btn price__button">Order shooting</button>
+          </div>
+          <div class="price__item">
+            <h3 class="price__title price__title_gold">Gold</h3>
+            <p class="price__price price__price_gold">1000 $</p>
+            <p>
+              <span class="price__option price__option_gold-1">Three locations or more</span>
+              <span class="price__option price__option_gold-2">300 photos in color</span>
+              <span class="price__option price__option_gold-3">50 photos in retouch</span>
+              <span class="price__option price__option_gold-4">Readiness 1 week</span>
+              <span class="price__option price__option_gold-5">Make up, visage, hairstyle</span>
+            </p>
+            <button class="btn price__button">Order shooting</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contacts" id="contacts">
+        <div class="contacts__container">
+          <h2 class="contacts__title">Contact me</h2>
+          <form class="contacts__form" action="#" method="get">
+            <input class="contacts__input contacts__input_email" type="email" placeholder="E-mail" required>
+            <input class="contacts__input contacts__input_tel" type="tel" placeholder="Phone" required>
+            <textarea class="contacts__input contacts__input_message" placeholder="Message"></textarea>
+            <button class="btn effects contacts__button" type="submit">Send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span class="footer__year">2022</span> 
+      <a class="footer__link footer__link_github" href="https://github.com/jaysuno0" target="_blank">github</a></p>
+      <a class="footer__link footer__link_school" href="https://rs.school/js-stage0/" target="_blank">Rolling Scopes School</a>
+      <ul class="footer__icon-wrapper">
+        <li>
+          <a class="footer__link" href="https://www.instagram.com/" target="_blank">
+            <img class="footer__icon" src="assets/svg/instagram-logo.svg" alt="instagram link">
+          </a>
+        </li>
+        <li>
+          <a class="footer__link" href="https://www.facebook.com/" target="_blank">
+            <img class="footer__icon" src="assets/svg/facebook-logo.svg" alt="facebook link">
+          </a>
+        </li>
+        <li>
+          <a class="footer__link" href="https://twitter.com/" target="_blank">
+            <img class="footer__icon" src="assets/svg/twitter-logo.svg" alt="twitter link">
+          </a>
+        </li>
+        <li>
+          <a class="footer__link" href="https://www.pinterest.com/" target="_blank">
+            <img class="footer__icon" src="assets/svg/pinterest-logo.svg" alt="pinterest link">
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+  <script type="module" src="assets/js/index.js"></script>
+</body>
+</html>

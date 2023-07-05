@@ -1,0 +1,62 @@
+/*
+  body, section-titles, 
+*/
+.body.light,
+.section__title.light {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+.lang-switch__option_active.light {
+  color: var(--white-color);
+}
+
+.btn.light:hover,
+.btn.light:active,
+.btn.portfolio__btn_active.light {
+  background-color: var(--black-color);
+  color: var(--gold-color);
+  transition: color var(--transition-time), background-color calc(var(--transition-time) * 2.5);
+}
+
+.footer__icon.light,
+.header__logo.light {
+  filter: var(--icon-black);
+}
+
+.header__theme-icon.light:hover{
+  filter: var(--icon-white); 
+}
+
+.header__burger-stick.light {
+  background-color: var(--black-color);
+}
+
+.nav.open.light,
+.hero__button.light,
+.contacts__button.light {
+  background-color: var(--white-color);
+}
+
+.btn.effects.light:hover{
+  transition: var(--transition-time);
+  box-shadow: 0 7px 4px -2px #333;
+}
+
+.portfolio__btn.light {
+  background-color: var(--gold-color);
+  color: var(--black-color);
+}
+
+
+.contacts__title.light,
+.contacts__input.light::placeholder {
+  color: var(--black-color);
+}
+
+
+
+.contacts__input.light {
+  background-color: var(--transparent-white);
+  color: var(--black-color);
+}

@@ -35,7 +35,7 @@
 
 .nav__item {
     position: relative;
-    padding: 0px 15px;
+    padding: 0 15px;
 
     text-transform: capitalize;
     cursor: pointer;
@@ -79,7 +79,7 @@
 }
 
 .header__burger-stick {
-    height: 3.1px;
+    height: 4px;
     width: 100%;
 
     background-color: var(--white-color);

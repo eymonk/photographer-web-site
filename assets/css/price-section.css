@@ -24,12 +24,12 @@
 }
 
 .price__title {
-    font-family: 'Merriweather-Bold';
+    font-family: 'Merriweather-Bold', Arial, sans-serif;;
     font-size: 28px;
 }
 
 .price__price {
-    font-family: 'Merriweather-Bold';
+    font-family: 'Merriweather-Bold', Arial, sans-serif;;
     font-size: 24px;
     padding-top: 37px;
     padding-bottom: 33px;

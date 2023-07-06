@@ -14,7 +14,7 @@ const languages = {
     'price__title': 'Price',
 
     //hero section
-    'hero__title': 'Alexa Rise',
+    'hero__title': 'Sasha Risova',
     'hero__motto': 'Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise',
     'hero__link': 'Hire me',
 
@@ -23,7 +23,7 @@ const languages = {
     'skills__description_1': 'High-quality photos in the studio and on the nature',
     'skills__name_2': 'Video shooting',
     'skills__description_2': 'Capture your moments so that they always stay with you',
-    'skills__name_3': 'Rotouch',
+    'skills__name_3': 'Retouch',
     'skills__description_3': 'I strive to make photography surpass reality',
     'skills__name_4': 'Audio',
     'skills__description_4': 'Professional sounds recording for video, advertising, portfolio',
@@ -79,7 +79,7 @@ const languages = {
     'price__title': 'Цены',
 
     //hero section
-    'hero__title': 'Алекса Райс',
+    'hero__title': 'Саша Рисова',
     'hero__motto': 'Сохраните искренние эмоции, романтические переживания и счастливые моменты жизни вместе с профессиональным фотографом',
     'hero__link': 'Пригласить',
 

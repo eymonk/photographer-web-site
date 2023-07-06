@@ -3,16 +3,14 @@
     padding-top: 60px;
     padding-bottom: 195px;
     max-height: 700px;
-
-    background: url('../img/contacts-bg-dark.jpg');
     background-size: auto 700px;
-    background-position: center center;
+    background: url('../img/contacts-bg-dark.jpg') center center;
 }
 
 .contacts__title {
-    padding: 20px 0px 40px;
+    padding: 20px 0 40px;
     font-size: 40px;
-    font-family: 'Merriweather-Bold';
+    font-family: 'Merriweather-Bold', Arial, sans-serif;
     background-color: transparent;
     color: var(--gold-color);
 }

@@ -27,8 +27,8 @@
 
   /* video section */
   .video {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .video .section__title-wrapper {
@@ -96,7 +96,7 @@
   .nav {
     display: block;
     position: absolute;
-    top: 0px;
+    top: 0;
     right: -768px;
 
     width: 620px;
@@ -143,7 +143,7 @@
 
   /* hero section */
   .hero {
-    padding: 68px 0 0px 60px;
+    padding: 68px 0 0 60px;
     height: 588px;
     background-position: -5px -120px;
     background-size: auto 620px;
@@ -154,20 +154,20 @@
   }
 
   .hero__title {
-    font-family: 'Merriweather-Regular';
+    font-family: 'Merriweather-Bold', Arial, sans-serif;
     font-weight: 400;
     font-size: 32px;
   }
 
   .hero__motto {
     line-height: normal;
-    padding-right: 0px;
+    padding-right: 0;
     padding-bottom: 60px;
   }
 
   /* skills section */
   .skills {
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 30px;
   }
 
@@ -252,8 +252,7 @@
   }
 
   .contacts__button {
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
   }
 
 
@@ -296,8 +295,7 @@
 
   /* header */
   .header {
-    padding: 13px 15px;
-    padding-right: 20px;
+    padding: 13px 20px 13px 15px;
   }
   .header__burger-menu {
     width: 35px;
@@ -321,8 +319,8 @@
   
   /* portfolio section */  
   .portfolio {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .portfolio__image {

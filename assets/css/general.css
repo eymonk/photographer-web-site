@@ -88,7 +88,7 @@ a {
 }
 
 .section {
-    padding: 100px 20px 0px 20px;
+    padding: 100px 20px 0 20px;
 }
 
 .section__title-wrapper {
@@ -106,7 +106,7 @@ a {
     padding: 15px 20px;
 
     font-size: 40px;
-    font-family: 'Merriweather-Bold';
+    font-family: 'Merriweather-Bold', Arial, sans-serif;
     color: var(--gold-color);
     background-color: var(--black-color);
 }

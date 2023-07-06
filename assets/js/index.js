@@ -16,7 +16,7 @@ const domElements = {
   navigation: document.querySelector('.nav'),
   burgerSticks: document.querySelectorAll('.header__burger-stick'),
   languageOptions: document.querySelectorAll('.lang-switch__option'),
-  seasonBtnsContainer: document.querySelector('.portfolio__wrapper_buttons'),
+  seasonButtonsContainer: document.querySelector('.portfolio__wrapper_buttons'),
   portfolioImages: document.querySelectorAll('.portfolio__image'),
   contacts: document.querySelector('.contacts'),
   inputs: document.querySelectorAll('.contacts__input'),
@@ -149,7 +149,7 @@ function changeLanguage(lang) {
   });
 }
 
-domElements.languageOptions.forEach((option, ind) => {
+domElements.languageOptions.forEach((option) => {
   option.addEventListener('click', () => {
     const lang = option.textContent;
     changeLanguage(lang);
@@ -158,7 +158,7 @@ domElements.languageOptions.forEach((option, ind) => {
 
 
 // SEASONS MENU
-domElements.seasonBtnsContainer.addEventListener('click', function (event) {
+domElements.seasonButtonsContainer.addEventListener('click', function (event) {
   const targetBtn = event.target;
   if (targetBtn.classList.contains('btn')) {
     const season = targetBtn.classList[3].split('_')[3];

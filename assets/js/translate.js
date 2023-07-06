@@ -16,7 +16,7 @@ const languages = {
     //hero section
     'hero__title': 'Alexa Rise',
     'hero__motto': 'Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise',
-    'hero__button': 'Hire me',
+    'hero__link': 'Hire me',
 
     //skills section
     'skills__name_1': 'Digital photography',
@@ -81,7 +81,7 @@ const languages = {
     //hero section
     'hero__title': 'Алекса Райс',
     'hero__motto': 'Сохраните искренние эмоции, романтические переживания и счастливые моменты жизни вместе с профессиональным фотографом',
-    'hero__button': 'Пригласить',
+    'hero__link': 'Пригласить',
 
     //skills section
     'skills__name_1': 'Фотография',

@@ -1,0 +1,45 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+
+    padding: 30px 20px 20px 20px;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__wrapper_year {
+    left: 0;
+}
+
+.footer__year {
+    padding: 0px 15px;
+}
+
+.footer__wrapper_icons {
+    justify-content: space-between;
+    width: 188px;
+}
+
+.footer__icon {
+    width: 30px;
+    height: 30px;
+    transition: filter var(--transition-time);
+}
+.footer__icon:hover {
+    filter: var(--icon-gold);
+}
+
+.footer__link {
+    transition: color var(--transition-time);
+}
+.footer__link:hover {
+    color: var(--gold-color);
+}

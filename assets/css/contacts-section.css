@@ -1,0 +1,75 @@
+
+.contacts {
+    padding-top: 60px;
+    padding-bottom: 195px;
+    max-height: 700px;
+
+    background: url('../img/contacts-bg-dark.jpg');
+    background-size: auto 700px;
+    background-position: center center;
+}
+
+.contacts__title {
+    padding: 20px 0px 40px;
+    font-size: 40px;
+    font-family: 'Merriweather-Bold';
+    background-color: transparent;
+    color: var(--gold-color);
+}
+
+.contacts__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    width: 450px;
+    margin-left: auto;
+}
+
+.contacts__form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contacts__input {
+    margin: 10px 0;
+    padding: 10px 20px;
+
+    font-family: inherit;
+    font-size: 20px;
+
+    border: var(--standard-border);
+    background-color: var(--transparent-black);
+    color: var(--gold-color);
+}
+.contacts__input::placeholder {
+    font-family: inherit;
+    color: var(--gold-color);
+    font-size: 20px;
+    transition: var(--transition-time);
+}
+.contacts__input:hover::placeholder,
+.contacts__message:hover::placeholder {
+    color: var(--white-color);
+}
+
+.contacts__input {
+    resize: none;
+    height: 50px;
+}
+
+.contacts__message {
+    resize: none;
+    height: 100px;
+}
+
+.contacts__button {
+    margin-top: 20px;
+    transition: var(--transition-time);
+}
+.contacts__button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 4px -2px #ddd;
+}

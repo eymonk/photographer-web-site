@@ -1,0 +1,37 @@
+
+.portfolio__buttons-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+
+    padding: 60px 0;
+}
+
+.portfolio__btn {
+    color: var(--gold-color);
+    background-color: var(--black-color);
+    border: var(--standard-border);
+}
+.portfolio__btn:hover {
+    color: var(--white-color);
+}
+.portfolio__btn_active {
+    color: var(--black-color);
+    background-color: var(--gold-color);
+}
+
+.portfolio__images-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    overflow: hidden;
+}
+
+.portfolio__image {
+    margin: 0 auto;
+    transition: transform var(--transition-time);
+}
+.portfolio__image:hover {
+    transform: scale(1.03, 1.015);
+}

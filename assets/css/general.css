@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Merriweather-Bold';
+    src: url('../fonts/Merriweather-Bold.ttf');
+}
+@font-face {
+    font-family: 'Merriweather-Regular';
+    src: url('../fonts/Merriweather-Regular.ttf');
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter.ttf');
+}
+
+:root {
+    --gold-color: #bdae82;
+    --white-color: #fff;
+    --black-color: #000;
+
+    --transparent-black: #0007;
+    --transparent-white: #fff7;
+
+    --icon-gold: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    --icon-white: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(182deg) brightness(101%) contrast(104%);
+    --icon-black: brightness(0) saturate(100%) invert(0%) sepia(90%) saturate(7500%) hue-rotate(191deg) brightness(86%) contrast(109%);
+
+    --standard-border: 2px solid #bdae82;
+    --transition-time: 250ms;
+}
+
+/******* reset *******/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/******* general *******/
+.body {
+
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+    background-color: var(--black-color);
+    color:  var(--white-color);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.btn {
+    width: 220px;
+    height: 55px;
+    border: none;
+
+    font-size: 20px;
+    font-family: inherit;
+
+    background-color: var(--gold-color);
+    color: var(--black-color);
+    cursor: pointer;
+    transition: color var(--transition-time);
+}
+.btn:hover {
+    color: var(--white-color);
+}
+
+.btn.effects {
+    transition: var(--transition-time);
+}
+.btn.effects:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 4px -2px #ddd;
+}
+
+.section {
+    padding: 100px 20px 0px 20px;
+}
+
+.section__title-wrapper {
+    width: 50%;
+    margin: 0 auto;
+
+    background-image: url('../svg/section-title-line-dark.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+.section__title {
+    display: inline-block;
+    padding: 15px 20px;
+
+    font-size: 40px;
+    font-family: 'Merriweather-Bold';
+    color: var(--gold-color);
+    background-color: var(--black-color);
+}

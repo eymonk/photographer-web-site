@@ -1,0 +1,49 @@
+
+.price__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.price__item {
+    width: 443px;
+    padding-top: 48px;
+    padding-bottom: 43px;
+
+    line-height: 36px;
+    text-align: center;
+    border: var(--standard-border);
+    transition: transform var(--transition-time);
+}
+.price__item:hover {
+    transform: scale(1.03);
+}
+
+.price__title {
+    font-family: 'Merriweather-Bold';
+    font-size: 28px;
+}
+
+.price__price {
+    font-family: 'Merriweather-Bold';
+    font-size: 24px;
+    padding-top: 37px;
+    padding-bottom: 33px;
+    color: var(--gold-color);
+}
+
+.price__option {
+    display: block;
+    font-size: 18px;
+}
+.price__option:last-child {
+    padding-bottom: 35px;
+}
+
+.price__button:hover {
+    color: var(--white-color);
+}

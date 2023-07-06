@@ -517,20 +517,29 @@ a {
 .footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
   
-  height: 150px;
-  padding: 0px 20px;
+  padding: 30px 20px 20px 20px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__wrapper_year {
+  left: 0;
 }
 
 .footer__year {
   padding: 0px 15px;
 }
 
-.footer__icon-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+.footer__wrapper_icons {
   justify-content: space-between;
   width: 188px;
 }

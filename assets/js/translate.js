@@ -62,10 +62,6 @@ const languages = {
     'contacts__title': 'Contact me',
     'contacts__button': 'Send message',
     'contacts__input': ['E-mail', 'Phone', 'Message'],
-
-    //footer 
-    'footer__link_school': 'Rolling Scopes School',
-    'footer__link_github': 'github'
   },
 
   'ru': {
@@ -131,10 +127,6 @@ const languages = {
     'contacts__title': 'Свяжитесь со мной',
     'contacts__button': 'Отправить',
     'contacts__input': ['Электронная почта', 'Телефон', 'Cooбщение'],
-
-    //footer 
-    'footer__link_school': 'Школа Rolling Scopes',
-    'footer__link_github': 'гитхаб'
   }
 }
 export default languages;

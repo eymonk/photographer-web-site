@@ -188,5 +188,3 @@ window.onload = function() {
 domElements.logo.addEventListener('click', () => {
   document.location.reload();
 });
-
-console.log('Всё в порядке 82-85 :)');

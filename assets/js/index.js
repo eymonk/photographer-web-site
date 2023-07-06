@@ -16,7 +16,7 @@ const domElements = {
   navigation: document.querySelector('.nav'),
   burgerSticks: document.querySelectorAll('.header__burger-stick'),
   languageOptions: document.querySelectorAll('.lang-switch__option'),
-  seasonBtnsContainer: document.querySelector('.portfolio__buttons-wrapper'), 
+  seasonBtnsContainer: document.querySelector('.portfolio__wrapper_buttons'),
   portfolioImages: document.querySelectorAll('.portfolio__image'),
   contacts: document.querySelector('.contacts'),
   inputs: document.querySelectorAll('.contacts__input'),

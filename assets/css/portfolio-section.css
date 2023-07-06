@@ -1,5 +1,4 @@
-
-.portfolio__buttons-wrapper {
+.portfolio__wrapper_buttons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -21,17 +20,21 @@
     background-color: var(--gold-color);
 }
 
-.portfolio__images-wrapper {
+.portfolio__wrapper_images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 25px;
+    grid-gap: 30px;
     overflow: hidden;
 }
 
+
+.portfolio__wrapper_image {
+    overflow: hidden;
+}
 .portfolio__image {
     margin: 0 auto;
     transition: transform var(--transition-time);
 }
 .portfolio__image:hover {
-    transform: scale(1.03, 1.015);
+    transform: scale(1.1);
 }

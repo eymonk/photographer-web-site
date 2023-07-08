@@ -172,9 +172,9 @@
         <div class="contacts__container">
           <h2 class="contacts__title">Contact me</h2>
           <form class="contacts__form" action="#" method="get">
-            <input class="contacts__input contacts__input_email" type="email" placeholder="E-mail" required>
-            <input class="contacts__input contacts__input_tel" type="tel" placeholder="Phone" required>
-            <textarea class="contacts__input contacts__input_message" placeholder="Message"></textarea>
+            <input class="input contacts__input contacts__input_email" type="email" placeholder="E-mail" required>
+            <input class="input contacts__input contacts__input_tel" type="tel" placeholder="Phone" required>
+            <textarea class="textarea contacts__input contacts__input_message" placeholder="Message"></textarea>
             <button class="btn effects contacts__button" type="submit">Send message</button>
           </form>
         </div>
@@ -201,6 +201,15 @@
       </ul>
       <p class="footer__wrapper footer__wrapper_year">©<span class="footer__year">2022</span>
     </footer>
+
+    <div class="wrapper wrapper__form hidden">
+      <form class="form form_order" action="#" method="GET">
+        <p class="form__title form__title_order">Order shooting</p>
+        <label class="label label_client-number" for="client-number">Leave your number and we will call you.</label>
+        <input class="input" type="tel" id="client-number" placeholder="your phone" required>
+        <button class="btn form__btn form__btn_submit" type="submit">submit</button>
+      </form>
+    </div>
   </div>
   <script type="module" src="assets/js/index.js"></script>
 </body>

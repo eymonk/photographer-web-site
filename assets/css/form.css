@@ -1,0 +1,35 @@
+.wrapper__form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 4rem;
+    border: 3px solid var(--gold-color);
+    background: var(--black-color);
+    color: white;
+}
+
+.form__title {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    color: var(--gold-color);
+}
+
+.form__btn_submit {
+    margin-top: 2rem;
+}

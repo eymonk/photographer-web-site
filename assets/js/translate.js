@@ -59,7 +59,12 @@ const languages = {
     //contacts section
     'contacts__title': 'Contact me',
     'contacts__button': 'Send message',
-    'contacts__input': ['E-mail', 'Phone', 'Message'],
+    'input': ['E-mail', 'Phone', 'Message'],
+
+    //order form
+    'form__title_order': 'Order shooting',
+    'label_client-number': 'Leave your number and I will call you back.',
+    'form__btn_submit': 'Submit',
   },
 
   'ru': {
@@ -123,6 +128,11 @@ const languages = {
     'contacts__title': 'Свяжитесь со мной',
     'contacts__button': 'Отправить',
     'contacts__input': ['Электронная почта', 'Телефон', 'Cooбщение'],
+
+    //order form
+    'form__title_order': 'Заказать съёмку',
+    'label_client-number': 'Оставьте ваш номер и я вам перезвоню.',
+    'form__btn_submit': 'Отправить',
   }
 }
 export default languages;

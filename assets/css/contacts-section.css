@@ -32,28 +32,6 @@
 }
 
 .contacts__input {
-    margin: 10px 0;
-    padding: 10px 20px;
-
-    font-family: inherit;
-    font-size: 20px;
-
-    border: var(--standard-border);
-    background-color: var(--transparent-black);
-    color: var(--gold-color);
-}
-.contacts__input::placeholder {
-    font-family: inherit;
-    color: var(--gold-color);
-    font-size: 20px;
-    transition: var(--transition-time);
-}
-.contacts__input:hover::placeholder,
-.contacts__message:hover::placeholder {
-    color: var(--white-color);
-}
-
-.contacts__input {
     resize: none;
     height: 50px;
 }

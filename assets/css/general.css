@@ -110,3 +110,30 @@ a {
     color: var(--gold-color);
     background-color: var(--black-color);
 }
+
+.input,
+.textarea {
+    margin: 10px 0;
+    padding: 10px 20px;
+
+    font-family: inherit;
+    font-size: 20px;
+
+    border: var(--standard-border);
+    background-color: var(--transparent-black);
+    color: var(--gold-color);
+}
+.input::placeholder {
+    font-family: inherit;
+    color: var(--gold-color);
+    font-size: 20px;
+    transition: var(--transition-time);
+}
+.input:hover::placeholder,
+.textarea:hover::placeholder {
+    color: var(--white-color);
+}
+
+.hidden {
+    display: none !important;
+}

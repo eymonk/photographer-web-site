@@ -1,4 +1,4 @@
-.wrapper__form {
+.wrapper__form-order {
     position: absolute;
     top: 0;
     right: 0;
@@ -8,8 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background: transparent;
+    background: radial-gradient(var(--black-color) 30%, transparent);
 }
 
 .form {
@@ -19,17 +18,33 @@
     justify-content: center;
     gap: 1rem;
     padding: 4rem;
-    border: 3px solid var(--gold-color);
-    background: var(--black-color);
-    color: white;
+    border: 3px solid var(--black-color);
+    background: var(--gold-color);
+    color: black;
 }
 
 .form__title {
+    font-family: 'Merriweather-Bold', Arial, sans-serif;
+    font-weight: bold;
     font-size: 1.5rem;
     padding-bottom: 2rem;
-    color: var(--gold-color);
 }
 
 .form__btn_submit {
     margin-top: 2rem;
+    background: var(--black-color);
+    color: var(--gold-color)
+}
+
+.form_order .input {
+    border-color: var(--black-color);
+    color: var(--black-color);
+}
+
+.form_order .input::placeholder {
+    color: var(--black-color);
+}
+
+.form_order .input:hover::placeholder {
+    color: var(--white-color);
 }

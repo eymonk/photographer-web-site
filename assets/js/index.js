@@ -20,6 +20,8 @@ const domElements = {
   portfolioImages: document.querySelectorAll('.portfolio__image'),
   contacts: document.querySelector('.contacts'),
   inputs: document.querySelectorAll('.contacts__input'),
+  orderShootingButtons: document.querySelectorAll('.price__button'),
+  formOrder: document.querySelector('.wrapper__form-order'),
 }
 
 
@@ -93,11 +95,28 @@ function changeTheme(theme) {
   });
 }
 
+
 domElements.themeBtn.addEventListener('click', (event) => {
   const theme = event.currentTarget.dataset.theme === 'dark' ? 'light' : 'dark';
   changeTheme(theme);
 })
 
+//ORDER SHOOTING
+function openForm() {
+  domElements.formOrder.classList.remove('hidden');
+  domElements.formOrder.style.transform = `translateY(${scrollY}px)`;
+  document.body.classList.add('no-scroll');
+}
+
+function closeForm() {
+  domElements.formOrder.classList.add('hidden');
+}
+
+domElements.orderShootingButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    openForm();
+  })
+});
 
 // BURGER MENU
 domElements.burgerMenu.addEventListener('click', () => {

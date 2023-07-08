@@ -3,14 +3,12 @@ const languages = {
     //navigation items
     'nav__item_skills': 'skills',
     'nav__item_portfolio': 'portfolio',
-    'nav__item_video': 'video',
     'nav__item_price': 'price',
     'nav__item_contacts': 'contacts',
 
     //section names
     'skills__title': 'Skills',
     'portfolio__title': 'Portfolio',
-    'video__title': 'Video',
     'price__title': 'Price',
 
     //hero section
@@ -68,14 +66,12 @@ const languages = {
     //navigation items
     'nav__item_skills': 'навыки',
     'nav__item_portfolio': 'портфолио',
-    'nav__item_video': 'видео',
     'nav__item_price': 'цены',
     'nav__item_contacts': 'контакты',
 
     //section names
     'skills__title': 'Навыки',
     'portfolio__title': 'Портфолио',
-    'video__title': 'Видео',
     'price__title': 'Цены',
 
     //hero section

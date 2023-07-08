@@ -12,11 +12,13 @@
 }
 
 .form {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+
     padding: 4rem;
     border: 3px solid var(--black-color);
     background: var(--gold-color);
@@ -34,6 +36,20 @@
     margin-top: 2rem;
     background: var(--black-color);
     color: var(--gold-color)
+}
+
+.form__btn_close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: auto;
+    height: auto;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0px 10px 3px 10px;
+
+    color: var(--gold-color);
+    background: var(--black-color);
 }
 
 .form_order .input {

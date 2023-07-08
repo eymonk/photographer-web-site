@@ -22,6 +22,7 @@ const domElements = {
   inputs: document.querySelectorAll('.contacts__input'),
   orderShootingButtons: document.querySelectorAll('.price__button'),
   formOrder: document.querySelector('.wrapper__form-order'),
+  formButtonClose: document.querySelector('.form__btn_close'),
 }
 
 
@@ -101,6 +102,7 @@ domElements.themeBtn.addEventListener('click', (event) => {
   changeTheme(theme);
 })
 
+
 //ORDER SHOOTING
 function openForm() {
   domElements.formOrder.classList.remove('hidden');
@@ -110,6 +112,7 @@ function openForm() {
 
 function closeForm() {
   domElements.formOrder.classList.add('hidden');
+  document.body.classList.remove('no-scroll');
 }
 
 domElements.orderShootingButtons.forEach(btn => {
@@ -117,6 +120,7 @@ domElements.orderShootingButtons.forEach(btn => {
     openForm();
   })
 });
+domElements.formButtonClose.addEventListener('click', closeForm);
 
 // BURGER MENU
 domElements.burgerMenu.addEventListener('click', () => {

@@ -52,6 +52,12 @@
     background: var(--black-color);
 }
 
+
+.form__error {
+    font-size: 16px;
+    color: var(--red-dark-color);
+}
+
 .form_order .input {
     border-color: var(--black-color);
     color: var(--white-color);

@@ -135,4 +135,4 @@ const languages = {
     'form__btn_submit': 'Отправить',
   }
 }
-export default languages;
+export default languages

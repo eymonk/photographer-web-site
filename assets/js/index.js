@@ -1,4 +1,5 @@
 import languages from './translate.js';
+import { sendNotification } from './bot.js';
 
 const current = {
   lang: 'en',
@@ -23,6 +24,8 @@ const domElements = {
   orderShootingButtons: document.querySelectorAll('.price__button'),
   formOrder: document.querySelector('.wrapper__form-order'),
   formButtonClose: document.querySelector('.form__btn_close'),
+  formButtonSubmit: document.querySelector('.form__btn_submit'),
+  clientNumber: document.querySelector('#client-number'),
 }
 
 
@@ -115,12 +118,20 @@ function closeForm() {
   document.body.classList.remove('no-scroll');
 }
 
-domElements.orderShootingButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    openForm();
-  })
-});
+function sendForm(clientNumber) {
+  sendNotification(clientNumber);
+  closeForm();
+}
+
+domElements.orderShootingButtons.forEach(btn => btn.addEventListener('click', openForm));
+
 domElements.formButtonClose.addEventListener('click', closeForm);
+
+domElements.formButtonSubmit.addEventListener('click', e => {
+  e.preventDefault();
+  sendForm(domElements.clientNumber.value);
+});
+
 
 // BURGER MENU
 domElements.burgerMenu.addEventListener('click', () => {

@@ -54,7 +54,7 @@
 
 .form_order .input {
     border-color: var(--black-color);
-    color: var(--black-color);
+    color: var(--white-color);
 }
 
 .form_order .input::placeholder {

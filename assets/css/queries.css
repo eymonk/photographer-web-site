@@ -137,7 +137,7 @@
     background-color: transparent;
   }
   .header__burger-stick:nth-child(3).open {
-    transform: rotateZ(45deg) translate(-15px, -4px);
+    transform: rotateZ(45deg) translate(-13px, -4px);
   }
   
 
@@ -277,12 +277,6 @@
       padding-left: 6%;
       padding-top: 15%;
     }
-    .header__burger-stick:nth-child(1).open {
-      transform: rotateZ(-45deg) translateY(19px);
-    }
-    .header__burger-stick:nth-child(3).open {
-      transform: rotateZ(45deg) translateY(-19px);
-    }
 }
 
 
@@ -301,15 +295,13 @@
     width: 35px;
     gap: 7px;
   }
-  .header__burger-stick:nth-child(1).open {
-    transform: rotateZ(-45deg) translateY(14px);
-  }
-  .header__burger-stick:nth-child(3).open {
-    transform: rotateZ(45deg) translateY(-14px);
-  }
 
   .header__logo {
     max-width: 20%;
+  }
+
+  .nav.open {
+    padding-top: 25%;
   }
 
   /* hero section */
@@ -340,5 +332,15 @@
   .contacts__input,
   .contacts__message {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .header__logo {
+    width: 40px;
+  }
+
+  .header {
+    padding: 13px 10px;
   }
 }

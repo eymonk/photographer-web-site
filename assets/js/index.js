@@ -165,11 +165,12 @@ function translateNode (node, text) {
   if (typeof text !== 'object') {
      document.querySelector(`.${node}`).textContent = text
   } else {
-    if (node === 'contacts__input') {
-      const inputs = document.querySelectorAll(`.contacts__input`)
-      inputs[0].setAttribute('placeholder', text[0])
-      inputs[1].setAttribute('placeholder', text[1])
-      inputs[2].setAttribute('placeholder', text[2])
+    if (node.includes('input')) {
+      const inputs = document.querySelectorAll(`.input`)
+      console.log(text)
+      inputs.forEach((input, index) => {
+        input.setAttribute('placeholder', text[index])
+      })
     } else {
       const nodes = document.querySelectorAll(`.${node}`)
       nodes.forEach((node, ind) => {

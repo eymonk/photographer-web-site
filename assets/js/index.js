@@ -3,6 +3,7 @@ import {changeTheme} from './themes.js'
 import {openForm} from './order.js';
 import dom from './dom.js';
 import state from './state.js';
+import {sendNotification} from './bot.js';
 
 
 //change language
@@ -39,6 +40,14 @@ dom.navigation.addEventListener('click', (e) => {
 
 //open form
 dom.orderShootingButtons.forEach(btn => btn.addEventListener('click', () => openForm()))
+
+
+//send "contacts" form
+dom.contactsButton.addEventListener('click', (event) => {
+  console.log(event)
+  const text = `Notification from project "Photographer's web-site". \nUser sent: \nEMAIL:${dom.contactsInputEmail.value} | \nPHONE:${dom.contactsInputTel.value} | \nMESSAGE:${dom.contactsInputMessage.value}`
+  sendNotification(text)
+})
 
 
 //change image-set in "portfolio section"

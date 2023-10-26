@@ -19,7 +19,8 @@ function showFormError(text) {
 }
 
 function sendForm(clientNumber) {
-    sendNotification(clientNumber)
+    const text = `Notification from project "Photographer's web-site". \nUser sent this as number: \n${clientNumber}`
+    sendNotification(text)
     closeForm()
 }
 

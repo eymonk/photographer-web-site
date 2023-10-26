@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(var(--black-color) 30%, transparent);
+    background: radial-gradient(var(--gold-color), transparent 70%);
 }
 
 .form {

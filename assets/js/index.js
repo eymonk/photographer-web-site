@@ -22,7 +22,7 @@ const domElements = {
   contacts: document.querySelector('.contacts'),
   inputs: document.querySelectorAll('.contacts__input'),
   orderShootingButtons: document.querySelectorAll('.price__button'),
-  formOrder: document.querySelector('.wrapper__form-order'),
+  formOrderWrapper: document.querySelector('.wrapper__form-order'),
   formButtonClose: document.querySelector('.form__btn_close'),
   formButtonSubmit: document.querySelector('.form__btn_submit'),
   formError: document.querySelector('.form__error'),
@@ -109,21 +109,19 @@ domElements.themeBtn.addEventListener('click', (event) => {
 
 //ORDER SHOOTING
 function openForm() {
-  domElements.formOrder.classList.remove('hidden')
-  domElements.formOrder.style.transform = `translateY(${scrollY}px)`
   document.body.classList.add('no-scroll')
+  domElements.formOrderWrapper.classList.remove('hidden')
+  domElements.formOrderWrapper.style.transform = `translateY(${scrollY}px)`
 }
 
 function closeForm() {
-  domElements.formOrder.classList.add('hidden')
+  domElements.formOrderWrapper.classList.add('hidden')
   document.body.classList.remove('no-scroll')
 }
 
 function showFormError(text) {
   domElements.formError.textContent = text;
-  setTimeout(() => {
-    domElements.formError.textContent = '';
-  }, 5000)
+  setTimeout(() => domElements.formError.textContent = '', 5000)
 }
 
 function sendForm(clientNumber) {
@@ -131,9 +129,12 @@ function sendForm(clientNumber) {
   closeForm()
 }
 
-domElements.orderShootingButtons.forEach(btn => btn.addEventListener('click', openForm))
+domElements.orderShootingButtons.forEach(btn => btn.addEventListener('click', () => openForm()))
 
-domElements.formButtonClose.addEventListener('click', closeForm)
+domElements.formButtonClose.addEventListener('click', (e) => {
+  e.preventDefault()
+  closeForm()
+})
 
 domElements.formButtonSubmit.addEventListener('click', e => {
   e.preventDefault()
@@ -167,7 +168,6 @@ function translateNode (node, text) {
   } else {
     if (node.includes('input')) {
       const inputs = document.querySelectorAll(`.input`)
-      console.log(text)
       inputs.forEach((input, index) => {
         input.setAttribute('placeholder', text[index])
       })
